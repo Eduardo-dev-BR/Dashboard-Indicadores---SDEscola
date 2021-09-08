@@ -1,0 +1,161 @@
+/* -----------Geral----------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    font-weight: bold   ;
+    font-size: 13px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+/* -----------/Geral----------- */
+
+/*------------Libray------------*/
+.container{
+    padding: 10px 2%;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-sm{
+    width: 25%;
+}
+
+.col-md{
+    width: 33.3%;
+}
+
+.col-lg{
+    width: 50%;
+}
+
+.col-xl{
+    width: 100%;
+}
+/*------------/Libray-----------*/
+
+
+/*------------Adjusts------------*/
+.menu {
+    height: 70px;
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: center;   
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.head{
+    padding: 5px;
+    border: 2px solid blue;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.mobile{
+    display: none;
+}
+
+hr{
+    display: none;
+}
+
+.grafico{
+    justify-content: space-around;
+}
+
+#grafico1{
+    margin-bottom: 100px;
+}
+
+#grafico h3 {
+    text-align: center;
+    color: blue;
+}
+
+#grafico p{
+    text-align: center;
+    color: #3a3a3a;
+}
+
+#grafico p span:nth-child(1){
+    color: green;
+}
+
+#grafico p span:nth-child(2){
+    color: red;
+}
+
+.table{
+    padding-top: 100px ;
+}
+
+
+/*------------/Adjusts------------*/
+
+@media screen and (max-width: 1024px){
+    .container{
+        padding: 10px 5%;
+    }
+
+    .col-sm{
+        width: 50%;
+    }
+
+    #item.col-sm{
+        width: 33.3%;
+    }
+
+    .content{
+        padding: 20px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        height: 34px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        padding: 10px 10%;
+    }
+
+    .col-sm{
+        width: 100%;
+    }
+
+    hr{
+        display: block;
+        text-align: center;
+    }
+
+    section#grafico.container > .col-md{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Escola - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul class="flex menu">
+                    <li><a>SD Escola</a></li>
+                    <li><a>Sair</a></li>
+                </ul>
+
+            </nav>
+        </header> 
+
+        <section class="flex container">
+
+            <div class="flex head desktop">
+                    <h3 class="col-sm">Contas a Receber</h3>
+                    <h3 class="col-sm">Contas a Pagar</h3>
+                    <h3 class="col-sm">Matrículas</h3>
+                    <h3 class="col-sm">Saldos</h3>
+            </div>
+            
+            <div id="content1" class="content flex col-sm"></div>
+            <div id="content2" class="content flex col-sm"></div>
+            <div id="content3" class="content flex col-sm"></div>
+            <div id="content4" class="content flex col-sm"></div>
+
+        </section>
+
+    </main>
+    <br>
+    <br>
+    <section id="grafico" class="grafico container flex">
+        <div class="col-md">
+                <h3>Gráfico de Recebimentos x Pagamentos</h3>
+                <br>
+                <p>Contas a <span>Receber</span> e a <span>Pagar</span> durante um período</p>
+                <canvas id="grafico1" height="320"></canvas>        
+        </div>
+        <div class="col-md">
+            <h3>Gráfico de Vagas</h3>
+            <br>
+            <br>
+            <canvas id="grafico2"></canvas>
+        </div>
+    </section>  
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/conteudo.js"></script>
+    <script src="js/grafico.js"></script>
+</body>
+</html>

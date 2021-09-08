@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas class="line-chart"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script>
+        var ctx = document.getElementsByClassName("line-chart");
+
+        //Type, Data e options
+        var chartGraph = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'],
+                datasets: [{
+                    label: "TAXA DE CLIQUES - 2017",
+                    data: [5,10,5,14,6,10,20,13,29,4,33,11],
+                    borderWidth: 6,
+                    borderColor: 'rgba(77,166,253,0.85)',
+                    backgroundColor: 'transparent'
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    fontSize: 20,
+                    text: "RELATORIO DE CTR ATUAL"
+                },
+                labels: {
+                    fontStyle: 'bold'
+                }
+            }
+
+        });
+    </script>
+</body>
+</html>
